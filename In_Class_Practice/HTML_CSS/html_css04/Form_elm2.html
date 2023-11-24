@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        background-color: chocolate;
+      }
+      .header {
+        background-color: grey;
+        display: flex;
+        align-items: center;
+      }
+      .header img {
+        padding: 10px;
+      }
+      form {
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <img src="./avatar-men.png" alt="" width="10%" />
+        <h4>PERSONEL TANIMA FORMU</h4>
+      </div>
+      <form action="./result.html">
+        <div>
+          <label for="ad"> Adiniz:</label>
+          <br />
+          <input type="text" id="ad" name="AD" />
+        </div>
+        <br />
+        <div>
+          <label for="soyad"> Soyadiniz:</label>
+          <br />
+          <input type="text" id="soyad" name="SOYAD" />
+        </div>
+        <br />
+        <div>
+          <label for="sifre">Sifreniz:</label>
+          <br />
+          <input type="password" id="sifre" name="SIFRE" />
+        </div>
+        <br />
+        <div>
+          <label for="yas">Yasiniz:</label> <br />
+          <input type="number" id="yas" name="YAS" />
+        </div>
+        <br />
+        <!-- radio -->
+        <div>
+          <label for="cinsiyet">Cinsiyetiniz:</label> <br />
+          <input type="radio" name="CINSIYET" id="" />
+          <label for="kadin">Kadin</label>
+          <br />
+          <input type="radio" name="CINSIYET" id="" checked />
+          <label for="erkek">Erkek</label>
+        </div>
+        <!-- checkbox -->
+        <br />
+        <div>
+          <label for="">Müsait günleriniz:</label>
+          <br />
+          <input type="checkbox" name="GÜN" id="" value="Pazartesi" />
+          <label for="">Pazartesi</label>
+          <br />
+          <input type="checkbox" name="GÜN" id="" value="Sali" />
+          <label for="">Sali</label>
+          <br />
+          <input type="checkbox" name="GÜN" id="" value="Carsamba" />
+          <label for="">Carsamba</label>
+          <br />
+          <input type="checkbox" name="GÜN" id="" value="Persembe" />
+          <label for="">Persembe</label>
+          <br />
+          <input type="checkbox" name="GÜN" id="" value="Cuma" />
+          <label for="">Cuma</label>
+          <br /><br />
+        </div>
+        <!-- color -->
+        <br />
+        <div>
+          <label for="renk">Sevdiginiz Renk:</label>
+          <input type="color" name="RENK" id="renk" value="#679867" />
+        </div>
+        <br />
+        <input type="submit" value="KAYDET" />
+      </form>
+    </div>
+  </body>
+</html>
