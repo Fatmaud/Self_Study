@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>POKEMON</title>
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <header>
@@ -14,10 +15,10 @@
     </section>
     <nav>
       <ul>
-        <li>Join the Club</li>
-        <li>Latest News</li>
-        <li>New Episodes</li>
-        <li>Contact</li>
+        <li><a href="#"> Join the Club</a></li>
+        <li><a href="#"> Latest News</a></li>
+        <li><a href="#"> New Episodes</a></li>
+        <li><a href="#"> Contact</a></li>
       </ul>
     </nav>
     <main>
@@ -25,31 +26,32 @@
         <h1>It's me, Ash Ketchum</h1>
         <p>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita
-          totam accusamus consectetur. Iusto, omnis eveniet nam sint temporibus
-          delectus maiores mollitia, quasi sit eius adipisci nisi repellat
-          veniam accusantium dolore.Lorem, ipsum dolor sit amet consectetur
-          adipisicing elit. Expedita totam accusamus consectetur. Iusto, omnis
-          eveniet nam sint temporibus delectus maiores mollitia, quasi sit eius
-          adipisci nisi repellat veniam accusantium dolore.
+          totam accusamus consectetur.
         </p>
       </article>
-      <ul>
-        <li><img src="Pokemon2.jpg" alt="" width="100%" /></li>
-        <li><img src="Pokemon3.jpg" alt="" width="100%" /></li>
+      <ul class="images">
+        <li>
+          <img src="Pokemon2.jpg" alt="" width="45%" />
+        </li>
+        <li><img src="Pokemon3.jpg" alt="" width="45%" /></li>
       </ul>
     </main>
-    <section>
-      <button>Join Today!</button>
+    <section class="join">
+      <h2>Join Today!</h2>
 
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
         magnam possimus quos libero quas officia voluptatibus aliquam
-        repellendus unde. Voluptate facilis officiis repudiandae atque
-        assumenda, culpa provident earum consequuntur consectetur.
+        repellendus unde.
       </p>
-      <form action="">
-        <input type="text" placeholder="Type email & click to send" />
-        <input type="button" value="send" />
+      <form action="#" method="get">
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Type email & click to send"
+        />
+        <input type="submit" value="Send" />
       </form>
     </section>
     <footer>&copy; Copyrigth 2023 PokemonClub</footer>
