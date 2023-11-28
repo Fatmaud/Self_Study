@@ -12,7 +12,7 @@
         ABC Tasarim Programi Kurulum ve Satis Sözlesmesi
       </h2>
 
-      <div class="box1">
+      <div>
         <label for="">Sözlesme Onay</label>
 
         <br />
@@ -27,7 +27,7 @@
         <input type="reset" value="Formu Temizle" />
       </div>
       <br />
-      <fieldset class="box2">
+      <fieldset>
         <legend for="">Kisisel Bilgiler</legend>
         <br />
         <label class="infolabels" for="güvenlik-id">Form Güvenlik Id</label>
@@ -49,7 +49,7 @@
         <input type="file" name="foto" id="foto" required />
       </fieldset>
       <br />
-      <div class="box3">
+      <div>
         <label for="">Diger Bilgiler</label>
         <section>
           <p><b>Buradaki alanlar mesleki deneyimi kapsar</b></p>
@@ -81,9 +81,14 @@
         </div>
 
         <br />
-        <section>
-          <label for="diller">Programlama Dilleri</label>
+      <div class="programlama-container">
+        <section class="programlama-left">
+          <label for="programlama">Programlama Dilleri</label>
+        </section>
+        <div class="programlama-right">
           <select name="programlama dilleri" id="" size="5">
+         
+            
             <optgroup>
               <option value="c">C#</option>
               <option value="cplus">C++</option>
@@ -93,10 +98,12 @@
               <option value="phyton">Phyton</option>
             </optgroup>
           </select>
-        </section>
+        </div>
+          
+       
       </div>
       <br />
-      <div class="box4">
+      <div>
         <label for="">Sözlesme Kopyasi</label>
         <br />
         <textarea name="kopya" id="" cols="40" rows="5">
@@ -104,7 +111,7 @@
         </textarea>
       </div>
       <br />
-      <div class="box5">
+      <div>
         <label for="">Mail Listesi</label>
         <br />
 
@@ -118,6 +125,7 @@
         <input type="radio" name="mail" checked />
         <br />
       </div>
+      
     </div>
   </body>
 </html>
