@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Satis Sözlesmesi</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div>
+      <h2 style="text-align: center">
+        ABC Tasarim Programi Kurulum ve Satis Sözlesmesi
+      </h2>
+
+      <div class="box1">
+        <label for="">Sözlesme Onay</label>
+
+        <br />
+
+        <input type="checkbox" />
+        <label for="">
+          Asagidaki bilgilerin dogrulugunu kabul ediyorum ve sözlesmesini
+          onayliyorum.</label
+        >
+        <br />
+        <input type="submit" value="Formu Kaydet" />
+        <input type="reset" value="Formu Temizle" />
+      </div>
+      <br />
+      <fieldset class="box2">
+        <legend for="">Kisisel Bilgiler</legend>
+        <br />
+        <label class="infolabels" for="güvenlik-id">Form Güvenlik Id</label>
+        <input type="text" name="guvenlik" id="guvenlik" placeholder="asdfgh" />
+        <br />
+        <label class="infolabels" for="ad">Ad</label>
+        <input type="text" name="ad" id="ad" required />
+        <br />
+        <label class="infolabels" for="Soyad">Soyad</label>
+        <input type="text" name="soyad" id="soyad" required />
+        <br />
+        <label class="infolabels" for="yas">Yas</label>
+        <input type="text" name="yas" id="yas" />
+        <br />
+        <label class="infolabels" for="email">Mail Adresi</label>
+        <input type="email" name="email" id="email" required />
+        <br />
+        <label class="infolabels" for="foto">Fotograf Ekle</label>
+        <input type="file" name="foto" id="foto" required />
+      </fieldset>
+      <br />
+      <div class="box3">
+        <label for="">Diger Bilgiler</label>
+        <section>
+          <p><b>Buradaki alanlar mesleki deneyimi kapsar</b></p>
+        </section>
+
+        <section>
+          <label for="tarih">Sektör Giris Tarihi</label>
+
+          <input type="date" name="giris_tarihi" id="tarih" />
+        </section>
+        <br />
+        <div class="deneyim-container">
+          <section class="deneyim-left">
+            <label for="deneyim">Sektör Deneyimi</label>
+          </section>
+          <div class="deneyim-right">
+            <input type="radio" name="deneyim" id="deneyim" />
+            <label for="">1-5 yil</label>
+            <br />
+            <input type="radio" name="deneyim" id="deneyim" />
+            <label for="">6-10 yil</label>
+            <br />
+            <input type="radio" name="deneyim" id="deneyim" />
+            <label for="">11-15 yil</label>
+            <br />
+            <input type="radio" name="deneyim" id="deneyim" />
+            <label for="">15-üzeri</label>
+          </div>
+        </div>
+
+        <br />
+        <section>
+          <label for="diller">Programlama Dilleri</label>
+          <select name="programlama dilleri" id="" size="5">
+            <optgroup>
+              <option value="c">C#</option>
+              <option value="cplus">C++</option>
+              <option value="php">PHP</option>
+              <option value="java">Java</option>
+              <option value="js">JavaScript</option>
+              <option value="phyton">Phyton</option>
+            </optgroup>
+          </select>
+        </section>
+      </div>
+      <br />
+      <div class="box4">
+        <label for="">Sözlesme Kopyasi</label>
+        <br />
+        <textarea name="kopya" id="" cols="40" rows="5">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt ipsum saepe pariatur velit? Eum deleniti cum qui dicta dolore fugit culpa distinctio accusantium repellat quam, voluptatibus alias neque mollitia consectetur ratione sed quasi eaque quia, temporibus accusamus exercitationem voluptatem, iste possimus quisquam. Debitis voluptate, quisquam dolore assumenda corporis sequi praesentium.
+        </textarea>
+      </div>
+      <br />
+      <div class="box5">
+        <label for="">Mail Listesi</label>
+        <br />
+
+        <label for="evet">Mail Listesine Katilmak <b>Istiyorum</b></label>
+        <input type="radio" name="mail" id="" />
+        <br />
+
+        <label for="hayir"
+          >Mail Listesine Katilmak <b><u>Istemiyorum</u></b></label
+        >
+        <input type="radio" name="mail" checked />
+        <br />
+      </div>
+    </div>
+  </body>
+</html>

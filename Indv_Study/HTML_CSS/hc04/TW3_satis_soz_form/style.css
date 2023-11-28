@@ -1,0 +1,32 @@
+body {
+  border: 0.5px solid black;
+  border-left: none;
+}
+
+div > div {
+  border: 0.5px solid black;
+  padding: 10px;
+}
+.infolabels {
+  /* border: 2px solid red; */
+  display: inline-block;
+  width: 150px;
+}
+.deneyim-container {
+  /* border: 2px solid red; */
+}
+.deneyim-left {
+  /* border: 2px solid blue; */
+  display: inline-block;
+  width: 150px;
+  margin-bottom: 20px;
+  /* vertical-align: middle; */
+  /* height: 100%; */
+  position: relative;
+  bottom: 60px;
+}
+.deneyim-right {
+  /* border: 2px solid green; */
+  display: inline-block;
+  border: none;
+}
