@@ -12,11 +12,8 @@
         ABC Tasarim Programi Kurulum ve Satis Sözlesmesi
       </h2>
 
-      <div>
-        <label for="">Sözlesme Onay</label>
-
-        <br />
-
+      <fieldset>
+        <legend for="">Sözlesme Onay</legend>
         <input type="checkbox" />
         <label for="">
           Asagidaki bilgilerin dogrulugunu kabul ediyorum ve sözlesmesini
@@ -25,39 +22,42 @@
         <br />
         <input type="submit" value="Formu Kaydet" />
         <input type="reset" value="Formu Temizle" />
-      </div>
-      <br />
-      <fieldset>
-        <legend for="">Kisisel Bilgiler</legend>
-        <br />
-        <label class="infolabels" for="güvenlik-id">Form Güvenlik Id</label>
-        <input type="text" name="guvenlik" id="guvenlik" placeholder="asdfgh" />
-        <br />
-        <label class="infolabels" for="ad">Ad</label>
-        <input type="text" name="ad" id="ad" required />
-        <br />
-        <label class="infolabels" for="Soyad">Soyad</label>
-        <input type="text" name="soyad" id="soyad" required />
-        <br />
-        <label class="infolabels" for="yas">Yas</label>
-        <input type="text" name="yas" id="yas" />
-        <br />
-        <label class="infolabels" for="email">Mail Adresi</label>
-        <input type="email" name="email" id="email" required />
-        <br />
-        <label class="infolabels" for="foto">Fotograf Ekle</label>
-        <input type="file" name="foto" id="foto" required />
       </fieldset>
+    </div>
+    <br />
+    <div></div>
+    <fieldset>
+      <legend for="">Kisisel Bilgiler</legend>
       <br />
-      <div>
-        <label for="">Diger Bilgiler</label>
+      <label class="infolabels" for="güvenlik-id">Form Güvenlik Id</label>
+      <input type="text" name="guvenlik" id="guvenlik" placeholder="asdfgh" />
+      <br />
+      <label class="infolabels" for="ad">Ad</label>
+      <input type="text" name="ad" id="ad" required />
+      <br />
+      <label class="infolabels" for="Soyad">Soyad</label>
+      <input type="text" name="soyad" id="soyad" required />
+      <br />
+      <label class="infolabels" for="yas">Yas</label>
+      <input type="text" name="yas" id="yas" />
+      <br />
+      <label class="infolabels" for="email">Mail Adresi</label>
+      <input type="email" name="email" id="email" required />
+      <br />
+      <label class="infolabels" for="foto">Fotograf Ekle</label>
+      <input type="file" name="foto" id="foto" required />
+    </fieldset>
+    <br />
+   
+      <fieldset>
+        <legend for="">Diger Bilgiler</legend>
         <section>
           <p><b>Buradaki alanlar mesleki deneyimi kapsar</b></p>
         </section>
-
+  
         <section>
           <label for="tarih">Sektör Giris Tarihi</label>
-
+  
           <input type="date" name="giris_tarihi" id="tarih" />
         </section>
         <br />
@@ -77,18 +77,15 @@
             <br />
             <input type="radio" name="deneyim" id="deneyim" />
             <label for="">15-üzeri</label>
-          </div>
-        </div>
 
-        <br />
+        </div>
+      </div>
       <div class="programlama-container">
         <section class="programlama-left">
           <label for="programlama">Programlama Dilleri</label>
         </section>
         <div class="programlama-right">
           <select name="programlama dilleri" id="" size="5">
-         
-            
             <optgroup>
               <option value="c">C#</option>
               <option value="cplus">C++</option>
@@ -99,33 +96,31 @@
             </optgroup>
           </select>
         </div>
-          
-       
       </div>
+
+
+    </fieldset>
+
       <br />
-      <div>
-        <label for="">Sözlesme Kopyasi</label>
+      <fieldset>
+        <legend for="">Sözlesme Kopyasi</legend>
         <br />
         <textarea name="kopya" id="" cols="40" rows="5">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt ipsum saepe pariatur velit? Eum deleniti cum qui dicta dolore fugit culpa distinctio accusantium repellat quam, voluptatibus alias neque mollitia consectetur ratione sed quasi eaque quia, temporibus accusamus exercitationem voluptatem, iste possimus quisquam. Debitis voluptate, quisquam dolore assumenda corporis sequi praesentium.
         </textarea>
-      </div>
+      </fieldset>
+     
       <br />
-      <div>
-        <label for="">Mail Listesi</label>
-        <br />
-
+      <fieldset>
+        <legend for="">Mail Listesi</legend>
         <label for="evet">Mail Listesine Katilmak <b>Istiyorum</b></label>
         <input type="radio" name="mail" id="" />
         <br />
 
         <label for="hayir"
-          >Mail Listesine Katilmak <b><u>Istemiyorum</u></b></label
-        >
+          >Mail Listesine Katilmak <b><u>Istemiyorum</u></b></label>
         <input type="radio" name="mail" checked />
-        <br />
-      </div>
-      
+      </fieldset>
     </div>
   </body>
 </html>
