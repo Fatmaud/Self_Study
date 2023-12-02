@@ -66,7 +66,7 @@ footer {
   overflow: scroll;
 }
 .box3::-webkit-scrollbar {
-  width: 0;
+  /* width: 0; */
   /* scroll olsun ama scrollbar görünmesin istersen bu cod blogunu kullanip width 0 yapacaksin */
 }
 .box4 {
@@ -75,4 +75,6 @@ footer {
 }
 
 .box5 {
+  overflow-y: scroll;
+  overflow-x: hidden;
 }

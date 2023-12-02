@@ -15,8 +15,10 @@ body {
 }
 
 .navbar {
+  /* position: fixed; */
   font-family: "Rubik Beastly", cursive;
   background-color: black;
+  width: 100vw;
   word-spacing: 20px;
 }
 nav a {
@@ -24,11 +26,11 @@ nav a {
   text-decoration: none;
 }
 main {
+  height: 500px;
   background-image: url(./background.jpg);
   background-size: cover;
-  /* background-position: center; */
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
   border: 1px solid black;
   /* position: relative; */
   top: 0;
