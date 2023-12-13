@@ -9,7 +9,7 @@
   height: 100vh;
   display: grid;
   grid-template-rows: 20% 20% 4% 15% 41%;
-  grid-template-columns: 25% 40% 35%;
+  grid-template-columns: 30% 40% 30%;
 }
 
 .box {
