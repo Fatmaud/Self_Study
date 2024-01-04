@@ -92,20 +92,29 @@
 
 //? 3) Not Degerleri
 
-let grade = +prompt("Notunuzu giriniz:");
-let result;
-if (grade >= 0 && grade <= 25) {
-  result = "FF";
-} else if (grade >= 26 && grade <= 45) {
-  result = "DD";
-} else if (grade >= 46 && grade <= 65) {
-  result = "CC";
-} else if (grade >= 66 && grade <= 75) {
-  result = "BB";
-} else if (grade >= 76 && grade <= 90) {
-  result = "BA";
-} else if (grade >= 91 && grade <= 100) {
-  result = "AA";
-} else console.log("0-100 arasinda bir sayi giriniz!");
+// let grade = +prompt("Notunuzu giriniz:");
+// let result;
+// if (grade >= 0 && grade <= 25) {
+//   result = "FF";
+// } else if (grade >= 26 && grade <= 45) {
+//   result = "DD";
+// } else if (grade >= 46 && grade <= 65) {
+//   result = "CC";
+// } else if (grade >= 66 && grade <= 75) {
+//   result = "BB";
+// } else if (grade >= 76 && grade <= 90) {
+//   result = "BA";
+// } else if (grade >= 91 && grade <= 100) {
+//   result = "AA";
+// } else console.log("0-100 arasinda bir sayi giriniz!");
 
-console.log(result);
+// console.log(result);
+
+const x = 5;
+const y = 10;
+
+if ((x + y) % x && y < 15) {
+  console.log("Both c.s are true");
+} else {
+  console.log("False");
+}

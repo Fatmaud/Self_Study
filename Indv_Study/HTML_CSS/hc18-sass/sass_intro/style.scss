@@ -3,28 +3,23 @@
   padding: 0;
   box-sizing: border-box;
 }
-/* ---------------------------------- */
-/*         Variable Assignment        */
-/* ---------------------------------- */
+
+//* variabales//
 
 $bgColor: pink;
 $fontFamily: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 $fontColor: white;
 $navBgColor: #30a7c3;
-$myBorder: 1px solid brown;
+$fontSize: 1.2rem;
+$myBorder: 2px solid brown;
 $bannerColor: hotpink;
-$buttonColor: rgb(223, 82, 106);
 
 body {
   background-color: $bgColor;
   font-family: $fontFamily;
-  font-size: 1.2rem;
+  font-size: $fontSize;
   color: $fontColor;
 }
-
-/* ---------------------------------- */
-/*               header               */
-/* ---------------------------------- */
 
 header {
   background-color: $navBgColor;
@@ -32,14 +27,11 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
-
   img {
     width: 80px;
     border: $myBorder;
-    border-radius: 1rem;
-    padding: 5px;
+    padding: 0.5rem;
   }
-
   ul {
     list-style-type: none;
     li {
@@ -48,57 +40,49 @@ header {
       &:hover {
         text-decoration: underline;
       }
-    }
-    a {
-      color: $fontColor;
-      text-decoration: none;
+      a {
+        color: $fontColor;
+        text-decoration: none;
+      }
     }
   }
 }
-
-/* ---------------------------------- */
-/*               banner               */
-/* ---------------------------------- */
 
 .banner {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: $bannerColor;
-  padding: 1rem;
   line-height: 2rem;
-
-  aside {
-    button {
-      padding: 0.5rem;
-      border: none;
-      border-radius: 5px;
-      background-color: $buttonColor;
-      margin-top: 1rem;
-      margin-left: 0.5rem;
-      &:hover {
-        background-color: rgb(219, 135, 149);
-        cursor: pointer;
-        transform: scale(0.97);
-      }
-    }
-  }
-
+  padding: 1rem;
   img {
     width: 30%;
     max-width: 400px;
     min-width: 250px;
   }
+  button {
+    border: none;
+    padding: 0.5rem;
+    border-radius: 5px;
+    background-color: pink;
+    margin-top: 1rem;
+    margin-left: 0.5rem;
+    &:hover {
+      background-color: rgb(246, 119, 140);
+      cursor: pointer;
+      transform: scale(0.97);
+    }
+  }
 }
 
 //! @mixin//
 
-@mixin myBox($backColor, $Color) {
+@mixin myBox($backColor, $color) {
   background-color: $backColor;
   width: 25%;
   height: 15rem;
   border-radius: 10px;
-  color: $Color;
+  color: $color;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -110,7 +94,13 @@ header {
   padding: 1rem;
 
   .card1 {
-    @include myBox(blue, green);
+    background-color: blue;
+    width: 25%;
+    height: 15rem;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .card2 {
     @include myBox(green, yellow);
@@ -123,43 +113,34 @@ header {
   }
 }
 
-/* ---------------------------------- */
-/*               article              */
-/* ---------------------------------- */
-
-//! @extend//
-
 .flex {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
+//! @extend//
 .articles {
   display: flex;
-  padding: 1rem;
   gap: 1rem;
+  padding: 1rem;
+
   .article1 {
     @extend .flex;
-    background-color: gray;
     width: 50%;
     height: 10rem;
-    border-radius: 10px;
     border: $myBorder;
+    border-radius: 10px;
+    background-color: grey;
   }
   .article2 {
     @extend .article1;
-    background-color: rgb(195, 96, 195);
+    background-color: rgb(186, 90, 186);
   }
 }
 
-/* ---------------------------------- */
-/*               footer               */
-/* ---------------------------------- */
-
-//! IF ELSE // &&&& //! FOR LOOP //
-
 footer {
-  $dark: 2;
+  $dark: 5;
   p {
     @if $dark==1 {
       background-color: grey;
@@ -172,13 +153,12 @@ footer {
   .social-icons {
     display: flex;
     height: 10rem;
-    $textColor: #990000, #55004e, #0fa8a1, #dcacf1, #64c217;
+    $textColor: white, pink, magenta, aqua, yellow;
 
     @for $i from 1 through 5 {
       .social#{$i} {
         width: 25%;
-        // background-color: lighten(blue, $i * 5);
-        background-color: darken(rgb(0, 255, 255), $i * 5);
+        background-color: lighten(blue, $i * 5);
         font-size: 1rem * $i;
         color: nth($textColor, $i);
       }
